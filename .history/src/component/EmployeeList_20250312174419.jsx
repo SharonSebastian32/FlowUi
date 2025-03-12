@@ -280,9 +280,7 @@ const EmployeeList = () => {
         <input
           type="text"
           placeholder="Search"
-          className="border border-gray-400 w-96 px-3 py-2 rounded-lg ml-4"
-          value={filtering}
-          onChange={(e) => setFiltering(e.target.value)}  
+          className="border border-gray-400 px-3 py-2 rounded-lg ml-3"
         />
       </div>
       <table className="min-w-full">
