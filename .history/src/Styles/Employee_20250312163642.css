@@ -131,7 +131,3 @@ button {
     transform: translateY(0);
   }
 }
-
-#search:focus {
-  outline: none;
-}

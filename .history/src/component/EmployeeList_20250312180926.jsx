@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { GrCircleQuestion } from "react-icons/gr";
+
 import {
   useReactTable,
   getCoreRowModel,
@@ -275,11 +276,12 @@ const EmployeeList = () => {
           uniqueTeams={uniqueTeams}
           handleGroupByTeam={handleGroupByTeam}
         />
-
-        <input
-          id="search"
+        <GlobalFilter
           value={filtering}
           onChange={(e) => setFiltering(e.target.value)}
+        />
+
+        <input
           type="text"
           placeholder="Search"
           className="border border-gray-400 w-96 px-3 py-2 rounded-lg ml-4"

@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { GrCircleQuestion } from "react-icons/gr";
+
 import {
   useReactTable,
   getCoreRowModel,
@@ -277,13 +278,19 @@ const EmployeeList = () => {
         />
 
         <input
-          id="search"
-          value={filtering}
-          onChange={(e) => setFiltering(e.target.value)}
           type="text"
           placeholder="Search"
           className="border border-gray-400 w-96 px-3 py-2 rounded-lg ml-4"
+          value={filtering}
+          onChange={(e) => setFiltering(e.target.value)}
         />
+
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4"
+          onClick={toggleColumnVisibilityModal} // Open column visibility modal
+        >
+          <HiOutlineDotsVertical />
+        </button>
       </div>
       <table className="min-w-full">
         <EmployeeTableHeader table={table} />

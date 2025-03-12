@@ -132,6 +132,11 @@ button {
   }
 }
 
+
+
+
 #search:focus {
-  outline: none;
+  outline:none;
+}{
+  
 }

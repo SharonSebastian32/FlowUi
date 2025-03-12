@@ -1,7 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { GrCircleQuestion } from "react-icons/gr";
-import {
+ import {
   useReactTable,
   getCoreRowModel,
   getPaginationRowModel,
@@ -277,7 +277,6 @@ const EmployeeList = () => {
         />
 
         <input
-          id="search"
           value={filtering}
           onChange={(e) => setFiltering(e.target.value)}
           type="text"

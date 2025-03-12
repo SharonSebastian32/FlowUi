@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { GrCircleQuestion } from "react-icons/gr";
+import GlobalFilter from "../component/GlobalFilter";
 import {
   useReactTable,
   getCoreRowModel,
@@ -277,7 +278,6 @@ const EmployeeList = () => {
         />
 
         <input
-          id="search"
           value={filtering}
           onChange={(e) => setFiltering(e.target.value)}
           type="text"
