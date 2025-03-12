@@ -18,7 +18,7 @@ import ColumnVisibilityModal from "./ColumnVisibilityModal";
 import ActionMenu from "./ActionMenu";
 import EmployeeTableHeader from "./Table/EmployeeTableHeader";
 import EmployeeTableBody from "./Table/EmployeeTableBody";
-import PaginationControls from "./Pagination/Pagination";
+import PaginationControls from "./";
 import GroupByTeamDropdown from "./GroupByTeam";
 
 const EmployeeList = () => {
