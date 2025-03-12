@@ -31,7 +31,7 @@ const ActionMenu = () => {
 
       {isOpen && (
         <div
-          style={{
+          style={{vscode-file://vscode-app/c:/Users/HP/AppData/Local/Programs/cursor/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html#
             display: "flex",
             flexDirection: "column",
             position: "absolute",
