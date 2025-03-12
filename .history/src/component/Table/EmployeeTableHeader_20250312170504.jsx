@@ -4,7 +4,7 @@ const EmployeeTableHeader = ({ table }) => {
   return (
     <thead className="bg-gray-50">
       {table.getHeaderGroups().map((headerGroup) => (
-        <tr key={headerGroup.id} className="cursor-pointer">
+        <tr key={headerGroup.id} className="border-b border-gray-200">
           {headerGroup.headers.map((header) => (
             <th
               key={header.id}

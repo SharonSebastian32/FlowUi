@@ -40,155 +40,150 @@ const EmployeeList = () => {
     return Array.from(teams).sort();
   }, [data]);
 
-  const columns = useMemo(
-    () => [
-      {
-        id: "select",
-        header: ({ table }) => (
+  const columns = useMemo(() => [
+    {
+      id: "select",
+      header: ({ table }) => (
+        <IndeterminateCheckbox
+          {...{
+            checked: table.getIsAllRowsSelected(),
+            indeterminate: table.getIsSomeRowsSelected(),
+            onChange: table.getToggleAllRowsSelectedHandler(),
+          }}
+        />
+      ),
+      cell: ({ row }) => (
+        <div onClick={(e) => e.stopPropagation()}>
           <IndeterminateCheckbox
             {...{
-              checked: table.getIsAllRowsSelected(),
-              indeterminate: table.getIsSomeRowsSelected(),
-              onChange: table.getToggleAllRowsSelectedHandler(),
+              checked: row.getIsSelected(),
+              disabled: !row.getCanSelect(),
+              indeterminate: row.getIsSomeSelected(),
+              onChange: row.getToggleSelectedHandler(),
             }}
           />
-        ),
-        cell: ({ row }) => (
-          <div onClick={(e) => e.stopPropagation()}>
-            <IndeterminateCheckbox
-              {...{
-                checked: row.getIsSelected(),
-                disabled: !row.getCanSelect(),
-                indeterminate: row.getIsSomeSelected(),
-                onChange: row.getToggleSelectedHandler(),
+        </div>
+      ),
+    },
+    {
+      accessorFn: (row) => `${row.Name}`,
+      id: "Name",
+      header: "Name",
+      cell: ({ row }) => (
+        <span
+          style={{
+            color: "#000000",
+            fontWeight: "500",
+            fontSize: "14px",
+          }}
+        >
+          {row.original.Name}
+        </span>
+      ),
+    },
+    {
+      accessorKey: "Team",
+      id: "Team",
+      accessorFn: (row) => `${row.Team}`,
+      header: () => (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
+          <span>Team</span>
+          <span style={{ marginLeft: "2.6px", cursor: "pointer" }}>
+            <GrCircleQuestion
+              style={{
+                color: "black",
+                height: "20px",
+                width: "20px",
               }}
             />
-          </div>
-        ),
-      },
-      {
-        accessorFn: (row) => `${row.Name}`,
-        id: "Name",
-        header: "Name",
-        cell: ({ row }) => (
+          </span>
+        </div>
+      ),
+    },
+    {
+      accessorKey: "Clock In",
+      id: "Clock In",
+      header: "Clock-In",
+      accessorFn: (row) => `${row.Clock_in}`,
+    },
+    {
+      accessorKey: "Clock Out",
+      id: "Clock Out",
+      header: "Clock-Out",
+      accessorFn: (row) => `${row.Clock_out}`,
+    },
+    {
+      accessorKey: "Productive",
+      id: "Productive",
+      header: "Productive",
+      accessorFn: (row) => `${row.Productive_time}`,
+      cell: ({ row }) => (
+        <span style={{ color: "#34db0b" }}>{row.original.Productive_time}</span>
+      ),
+    },
+    {
+      accessorKey: "Unproductive",
+      id: "Unproductive",
+      header: "Unproductive",
+      accessorFn: (row) => `${row.Unproductive_time}`,
+      cell: ({ row }) => (
+        <span style={{ color: "#ff2918" }}>
+          {row.original.Unproductive_time}
+        </span>
+      ),
+    },
+    {
+      accessorKey: "Neutral",
+      id: "Neutral",
+      header: "Neutral",
+      accessorFn: (row) => `${row.Neutral_time}`,
+    },
+    {
+      accessorKey: "Idle",
+      id: "Idle",
+      header: "Idle",
+      accessorFn: (row) => `${row.Idle_time}`,
+    },
+    {
+      accessorKey: "Action",
+      id: "Action",
+      header: () => (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
+          <span>Action</span>
           <span
-            style={{
-              color: "#000000",
-              fontWeight: "500",
-              fontSize: "14px",
-            }}
+            style={{ marginLeft: "2.4px", cursor: "pointer" }}
+            onClick={() => handleMenuItemClick("edit")}
           >
-            {row.original.Name}
+            <HiOutlineDotsVertical
+              style={{
+                color: "gray",
+                height: "20px",
+                width: "30px",
+              }}
+            />
           </span>
-        ),
-      },
-      {
-        accessorKey: "Team",
-        id: "Team",
-        accessorFn: (row) => `${row.Team}`,
-        header: () => (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "row",
-            }}
-          >
-            <span>Team</span>
-            <span style={{ marginLeft: "2.6px", cursor: "pointer" }}>
-              <GrCircleQuestion
-                style={{
-                  color: "black",
-                  height: "20px",
-                  width: "20px",
-                }}
-              />
-            </span>
-          </div>
-        ),
-      },
-      {
-        accessorKey: "Clock In",
-        id: "Clock In",
-        header: "Clock-In",
-        accessorFn: (row) => `${row.Clock_in}`,
-      },
-      {
-        accessorKey: "Clock Out",
-        id: "Clock Out",
-        header: "Clock-Out",
-        accessorFn: (row) => `${row.Clock_out}`,
-      },
-      {
-        accessorKey: "Productive",
-        id: "Productive",
-        header: "Productive",
-        accessorFn: (row) => `${row.Productive_time}`,
-        cell: ({ row }) => (
-          <span style={{ color: "#34db0b" }}>
-            {row.original.Productive_time}
-          </span>
-        ),
-      },
-      {
-        accessorKey: "Unproductive",
-        id: "Unproductive",
-        header: "Unproductive",
-        accessorFn: (row) => `${row.Unproductive_time}`,
-        cell: ({ row }) => (
-          <span style={{ color: "#ff2918" }}>
-            {row.original.Unproductive_time}
-          </span>
-        ),
-      },
-      {
-        accessorKey: "Neutral",
-        id: "Neutral",
-        header: "Neutral",
-        accessorFn: (row) => `${row.Neutral_time}`,
-      },
-      {
-        accessorKey: "Idle",
-        id: "Idle",
-        header: "Idle",
-        accessorFn: (row) => `${row.Idle_time}`,
-      },
-      {
-        accessorKey: "Action",
-        id: "Action",
-        header: () => (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "row",
-            }}
-          >
-            <span>Action</span>
-            <span
-              style={{ marginLeft: "2.4px", cursor: "pointer" }}
-              onClick={() => handleMenuItemClick("edit")}
-            >
-              <HiOutlineDotsVertical
-                style={{
-                  color: "gray",
-                  height: "20px",
-                  width: "30px",
-                }}
-              />
-            </span>
-          </div>
-        ),
-        cell: ({ row }) => (
-          <ActionMenu
-            row={row}
-            openColumnVisibilityModal={toggleColumnVisibilityModal}
-          />
-        ),
-      },
-    ],
-    []
-  );
+        </div>
+      ),
+      cell: ({ row }) => (
+        <ActionMenu
+          row={row}
+          openColumnVisibilityModal={toggleColumnVisibilityModal}
+        />
+      ),
+    },
+  ], []);
 
   const toggleColumnVisibilityModal = () => {
     setIsColumnVisibilityModalOpen(!isColumnVisibilityModalOpen);

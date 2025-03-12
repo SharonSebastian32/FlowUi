@@ -8,7 +8,8 @@ const ColumnVisibilityModal = ({
   columnVisibility,
   setColumnVisibility,
 }) => {
-   useEffect(() => {
+  // Handle escape key to close modal
+  useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape") onClose();
     };

@@ -89,7 +89,7 @@ const GroupByTeamDropdown = ({ uniqueTeams, handleGroupByTeam }) => {
             <IoMdCloseCircleOutline
               style={{
                 color: "red",
-                height: "35px",
+                height: "20px",
                 width: "20px",
               }}
             />

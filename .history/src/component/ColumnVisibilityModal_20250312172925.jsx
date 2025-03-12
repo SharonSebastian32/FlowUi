@@ -8,7 +8,8 @@ const ColumnVisibilityModal = ({
   columnVisibility,
   setColumnVisibility,
 }) => {
-   useEffect(() => {
+  // Handle escape key to close modal
+  useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape") onClose();
     };
@@ -50,7 +51,7 @@ const ColumnVisibilityModal = ({
         <div className="bg-gray-50 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
           <h2 className="text-xl font-bold text-gray-800 flex items-center">
             <span className="mr-2"></span>
-            Configuration
+            Column Visibility
           </h2>
           <button
             onClick={onClose}
@@ -61,7 +62,8 @@ const ColumnVisibilityModal = ({
           </button>
         </div>
 
-         <div className="px-6 py-3 bg-gray-50 border-b border-gray-200">
+        {/* Toggle All Section */}
+        <div className="px-6 py-3 bg-gray-50 border-b border-gray-200">
           <div className="flex justify-between">
             <button
               onClick={() => toggleAllColumns(true)}
