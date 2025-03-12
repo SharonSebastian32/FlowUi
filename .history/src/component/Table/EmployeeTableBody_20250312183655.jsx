@@ -10,7 +10,7 @@ const EmployeeTableBody = ({ table }) => {
           <tr
             key={row.id}
             className={
-              isSelected ? "bg-gray-200 hover:bg-gray-300" : "hover:bg-gray-100"
+              isSelected ? "bg-gray-200 hover:bg-gray-300" : "hover:bg-GRAY-100"
             }
             style={{
               backgroundColor: isSelected ? "#e5e7eb" : "white",

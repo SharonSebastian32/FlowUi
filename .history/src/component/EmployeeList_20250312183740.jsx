@@ -124,7 +124,7 @@ const EmployeeList = () => {
         header: "Productive",
         accessorFn: (row) => `${row.Productive_time}`,
         cell: ({ row }) => (
-          <span style={{ color: "#0dc900" }}>
+          <span style={{ color: "#34db0b" }} >
             {row.original.Productive_time}
           </span>
         ),
