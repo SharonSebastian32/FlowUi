@@ -1,0 +1,136 @@
+[
+  {
+    "Name": "David Brown",
+    "Team": "Sales",
+    "Clock_in": "10:00 AM",
+    "Clock_out": "07:30 PM",
+    "Work_time": "9h 30min",
+    "Productive_time": "7h 00min",
+    "Unproductive_time": "2h 00min",
+    "Neutral_time": "0h 30min",
+    "Idle_time": "0h 00min",
+    "Action": "Reviewed sales reports"
+  },
+  {
+    "Name": "Emily Johnson",
+    "Team": "Marketing",
+    "Clock_in": "09:00 AM",
+    "Clock_out": "05:30 PM",
+    "Work_time": "8h 30min",
+    "Productive_time": "6h 00min",
+    "Unproductive_time": "2h 30min",
+    "Neutral_time": "0h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Prepared marketing strategy"
+  },
+  {
+    "Name": "Michael Smith",
+    "Team": "Development",
+    "Clock_in": "08:30 AM",
+    "Clock_out": "04:30 PM",
+    "Work_time": "8h 00min",
+    "Productive_time": "5h 30min",
+    "Unproductive_time": "1h 30min",
+    "Neutral_time": "1h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Fixed bugs in the application"
+  },
+  {
+    "Name": "Sarah Wilson",
+    "Team": "Design",
+    "Clock_in": "09:15 AM",
+    "Clock_out": "05:45 PM",
+    "Work_time": "8h 30min",
+    "Productive_time": "7h 00min",
+    "Unproductive_time": "1h 30min",
+    "Neutral_time": "0h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Created new design templates"
+  },
+  {
+    "Name": "James Taylor",
+    "Team": "Sales",
+    "Clock_in": "10:15 AM",
+    "Clock_out": "06:15 PM",
+    "Work_time": "8h 00min",
+    "Productive_time": "5h 00min",
+    "Unproductive_time": "2h 00min",
+    "Neutral_time": "1h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Conducted client meetings"
+  },
+  {
+    "Name": "Jessica Davis",
+    "Team": "Human Resources",
+    "Clock_in": "09:00 AM",
+    "Clock_out": "05:00 PM",
+    "Work_time": "8h 00min",
+    "Productive_time": "6h 00min",
+    "Unproductive_time": "1h 00min",
+    "Neutral_time": "1h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Interviewed candidates"
+  },
+  {
+    "Name": "David Brown",
+    "Team": "Sales",
+    "Clock_in": "10:00 AM",
+    "Clock_out": "07:30 PM",
+    "Work_time": "9h 30min",
+    "Productive_time": "7h 00min",
+    "Unproductive_time": "2h 00min",
+    "Neutral_time": "0h 30min",
+    "Idle_time": "0h 00min",
+    "Action": "Followed up with leads"
+  },
+  {
+    "Name": "Linda Martinez",
+    "Team": "Customer Support",
+    "Clock_in": "11:00 AM",
+    "Clock_out": "08:00 PM",
+    "Work_time": "9h 00min",
+    "Productive_time": "6h 30min",
+    "Unproductive_time": "2h 30min",
+    "Neutral_time": "0h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Resolved customer issues"
+  },
+  {
+    "Name": "Robert Garcia",
+    "Team": "Finance",
+    "Clock_in": "08:00 AM",
+    "Clock_out": "04:00 PM",
+    "Work_time": "8h 00min",
+    "Productive_time": "5h 30min",
+    "Unproductive_time": "1h 30min",
+    "Neutral_time": "1h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Reviewed financial reports"
+  },
+  {
+    "Name": "Maria Hernandez",
+    "Team": "Sales",
+    "Clock_in": "10:30 AM",
+    "Clock_out": "07:00 PM",
+    "Work_time": "8h 30min",
+    "Productive_time": "6h 00min",
+    "Unproductive_time": "2h 30min",
+    "Neutral_time": "0h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Conducted product training"
+  },
+  {
+    "Name": "William Lee",
+    "Team": "Development",
+    "Clock_in": "09:00 AM",
+    "Clock_out": "05:30 PM",
+    "Work_time": "8h 30min",
+    "Productive_time": "7h 30min",
+    "Unproductive_time": "1h 00min",
+    "Neutral_time": "0h 00min",
+    "Idle_time": "0h 00min",
+    "Action": "Implemented new features"
+  }
+  
+ 
+]
