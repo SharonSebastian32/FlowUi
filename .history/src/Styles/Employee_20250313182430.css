@@ -209,7 +209,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .admin-info {
-    display: none;
-  }
+.admin-info {
+  display: none;
 }

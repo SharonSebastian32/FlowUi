@@ -163,23 +163,9 @@ button {
   outline: none;
   border: 1px solid #d1d5db;
 }
-@media (max-width: 1059px) {
-  #add-member {
-    display: none;
-  }
-  #filter {
-    display: none;
-  }
-  #message {
-    display: none;
-  }
-  .admin-info {
-    display: none;
-  }
-  #search-box {
-    width: 100%;
-  }
-}
+
+
+
 
 @media (max-width: 768px) {
   #add-member {
@@ -197,9 +183,6 @@ button {
   #search-box {
     width: 100%;
   }
-  #empty {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -208,8 +191,4 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .admin-info {
-    display: none;
-  }
-}
+ 

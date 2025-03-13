@@ -16,17 +16,11 @@
 }
 
 
- 
 @media (max-width: 768px) {
   #date-picker-container {
     display: none;
   }
 }
-
-
-
-
- 
 @media (max-width: 1059px) {
   #date-picker-container {
     display: none;

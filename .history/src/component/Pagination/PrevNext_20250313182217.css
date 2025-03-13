@@ -24,11 +24,3 @@
 }
 
 
-
-
- 
-@media (max-width: 1059px) {
-  #date-picker-container {
-    display: none;
-  }
-}

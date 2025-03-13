@@ -15,20 +15,16 @@
   align-items: center;
 }
 
+/*************  ✨ Codeium Command 🌟  *************/
 
- 
 @media (max-width: 768px) {
   #date-picker-container {
     display: none;
   }
 }
-
-
-
-
- 
 @media (max-width: 1059px) {
   #date-picker-container {
     display: none;
   }
 }
+/******  6e242e3c-d9b8-43dd-ba01-eb76c7fdee77  *******/

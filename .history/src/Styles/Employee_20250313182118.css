@@ -197,19 +197,10 @@ button {
   #search-box {
     width: 100%;
   }
-  #empty {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
   #empty {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .admin-info {
     display: none;
   }
 }
