@@ -1,5 +1,6 @@
 import { LuMessageCircleMore } from "react-icons/lu";
- import "./Message.css";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import "./Message.css";
  import { MdNotificationsNone } from "react-icons/md";
 
 function Message() {

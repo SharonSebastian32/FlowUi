@@ -41,14 +41,14 @@
 }
 
 #sub-div {
-  padding: 7px 15px;
+  p
   display: flex;
   justify-content: row;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 1rem;
   gap: 2.5rem;
-  background-color: rgb(255, 251, 230);
+  background-color: hwb(0 86% 14%);
 }
 #div-end {
   padding: 7px 50px 7px 15px;
@@ -137,6 +137,3 @@ button {
 #search:focus {
   outline: none;
 }
-
-
-

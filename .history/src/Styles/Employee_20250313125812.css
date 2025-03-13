@@ -48,7 +48,7 @@
   justify-content: flex-start;
   margin-bottom: 1rem;
   gap: 2.5rem;
-  background-color: rgb(255, 251, 230);
+  background-color: rgb(247, 245, 235);
 }
 #div-end {
   padding: 7px 50px 7px 15px;
@@ -137,6 +137,3 @@ button {
 #search:focus {
   outline: none;
 }
-
-
-

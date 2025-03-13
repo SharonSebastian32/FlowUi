@@ -1,6 +1,6 @@
 import { LuMessageCircleMore } from "react-icons/lu";
- import "./Message.css";
- import { MdNotificationsNone } from "react-icons/md";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import "./Message.css";
 
 function Message() {
   return (
@@ -16,7 +16,7 @@ function Message() {
           <span className="red-dot message-dot"></span>
         </div>
         <div className="icon-container">
-          <MdNotificationsNone
+          <IoMdNotificationsOutline
             id="notification-icon"
             onClick={() => {
               alert("No new notifications for you");

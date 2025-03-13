@@ -23,8 +23,7 @@ import EmployeeTableBody from "./Table/EmployeeTableBody";
 import PaginationControls from "./Pagination/Pagination";
 import GroupByTeamDropdown from "./GroupByTeam";
 import PrevNext from "./Pagination/PrevNext";
-import AdminInfo from "./Admin/AdminInfo.jsx";
-
+  
 const EmployeeList = () => {
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
   const [sorting, setSorting] = useState([]);
@@ -75,8 +74,7 @@ const EmployeeList = () => {
         id: "Name",
         header: "Name",
         cell: ({ row }) => (
-          <span
-            id="name-span"
+          <span id=""
             style={{
               color: "#000000",
               fontWeight: "500",
@@ -294,8 +292,7 @@ const EmployeeList = () => {
         <AddMember />
         <Filter />
         <Message />
-        <AdminInfo />
-      </div>
+       </div>
       <table className="min-w-full">
         <EmployeeTableHeader table={table} />
         <EmployeeTableBody table={table} />
