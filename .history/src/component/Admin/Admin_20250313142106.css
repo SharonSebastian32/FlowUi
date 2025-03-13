@@ -1,0 +1,11 @@
+.admin-info {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info span {
+  font-size: 9.2px;
+}
+
+#name{
+   
+}

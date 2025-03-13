@@ -1,0 +1,32 @@
+.admin-info {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info span {
+  font-size: 9.2px;
+}
+#category {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 600;
+}
+#name {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}
+/*************  ✨ Codeium Command 🌟  *************/
+.admin-icon {
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #fffce3;
+  font-size: 15px;
+  font-weight: 550;
+.admin-icon{
+  padding: "9px",
+  borderRadius: "50%",
+  backgroundColor: "#fffce3",
+  fontSize: "15px",
+  fontWeight: "550",
+}
+/******  96396d2b-cd6a-4e7e-a627-c563b7677fac  *******/

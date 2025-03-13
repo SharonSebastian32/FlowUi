@@ -1,0 +1,15 @@
+.admin-info {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info span {
+  font-size: 9.2px;
+}
+#category {
+  font-size: rem;
+  color: #2e2e2e;
+}
+#name {
+  font-size: 0.8rem;
+  color: #000;
+}

@@ -1,0 +1,24 @@
+.admin-info {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info span {
+  font-size: 9.2px;
+}
+#category {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 600;
+}
+#name {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}
+/* .admin-icon{
+  padding: "9px",
+  borderRadius: "50%",
+  backgroundColor: "#fffce3",
+  fontSize: "15px",
+  fontWeight: "550",
+} */
