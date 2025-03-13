@@ -1,0 +1,27 @@
+.admin-info {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info span {
+  font-size: 9.2px;
+}
+#category {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 600;
+}
+#name {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}
+.admin-icon {
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #ffb428;
+  font-size: 15px;
+  background: linear-gradient(145deg, #ffb428, #ff7b00);
+  font-weight: 550;
+  cursor: pointer;
+  color: #ffffff;
+}
