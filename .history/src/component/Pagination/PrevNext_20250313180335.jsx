@@ -188,23 +188,20 @@ function PrevNext() {
 
   return (
     <>
-      <div id="date-picker-container">
-        <div
-          style={{ display: "flex", justifyContent: "center", gap: "0.7rem" }}
-        >
-          <span className="font-semibold text-sm text-black">
-            {formatDate(selectedDate)}
-          </span>
-          <FaCalendarAlt
-            ref={calendarIconRef}
-            onClick={toggleCalendar}
-            style={{
-              cursor: "pointer",
-              color: "orange",
-              fontSize: "1rem",
-            }}
-          />
-        </div>
+      <div></div>
+      <div style={{ display: "flex", justifyContent: "center", gap: "0.7rem" }}>
+        <span className="font-semibold text-sm text-black">
+          {formatDate(selectedDate)}
+        </span>
+        <FaCalendarAlt
+          ref={calendarIconRef}
+          onClick={toggleCalendar}
+          style={{
+            cursor: "pointer",
+            color: "orange",
+            fontSize: "1rem",
+          }}
+        />
       </div>
 
       {showCalendar && <NormalCalendar />}

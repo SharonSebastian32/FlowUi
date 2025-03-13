@@ -15,6 +15,20 @@
   align-items: center;
 }
 
+/*  
+ @media (max-width: 768px) {
+  .prev-next-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .prev-button, .next-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} */
+
+
 @media (max-width: 768px) {
   #date-picker-container {
     display: none;

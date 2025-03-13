@@ -188,4 +188,8 @@ button {
   }
 }
 
- 
+@media (max-width: 768px) {
+  #next-page {
+    display: none;
+  }
+}

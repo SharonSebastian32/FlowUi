@@ -186,6 +186,11 @@ button {
   #empty {
     display: none;
   }
+ 
 }
 
- 
+@media (max-width: 768px) {
+  #next-page{
+    di
+  }
+}

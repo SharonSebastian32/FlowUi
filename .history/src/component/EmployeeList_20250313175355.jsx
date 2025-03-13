@@ -22,9 +22,8 @@ import EmployeeTableHeader from "./Table/EmployeeTableHeader";
 import EmployeeTableBody from "./Table/EmployeeTableBody";
 import PaginationControls from "./Pagination/Pagination";
 import GroupByTeamDropdown from "./GroupByTeam";
-import AdminInfo from "./Admin/AdminInfo.jsx";
-import PrevNext from "./Pagination/PrevNext.jsx";
-
+ import AdminInfo from "./Admin/AdminInfo.jsx";
+ 
 const EmployeeList = () => {
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
   const [sorting, setSorting] = useState([]);
@@ -285,18 +284,8 @@ const EmployeeList = () => {
           placeholder="Search"
         />
 
-
-        <div className="next-page"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          <PrevNext />
-        </div>
-
+         
+        <PrevNext
         <AddMember id="add-member" />
         <Filter id="filter" />
         <Message id="message" />

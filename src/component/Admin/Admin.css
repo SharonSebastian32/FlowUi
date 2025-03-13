@@ -18,9 +18,15 @@
 .admin-icon {
   padding: 9px;
   border-radius: 50%;
-   font-size: 15px;
+  font-size: 15px;
   background: linear-gradient(145deg, #ffe5b4, #ff7b00);
   font-weight: 550;
   cursor: pointer;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .admin-info {
+    display: none;
+  }
 }

@@ -284,19 +284,10 @@ const EmployeeList = () => {
           type="text"
           placeholder="Search"
         />
-
-
-        <div className="next-page"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          <PrevNext />
-        </div>
-
+        <div style={{
+          
+        }}><PrevNext /></div>
+        
         <AddMember id="add-member" />
         <Filter id="filter" />
         <Message id="message" />

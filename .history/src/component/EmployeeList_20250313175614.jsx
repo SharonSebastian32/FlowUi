@@ -284,9 +284,7 @@ const EmployeeList = () => {
           type="text"
           placeholder="Search"
         />
-
-
-        <div className="next-page"
+        <div
           style={{
             display: "flex",
             justifyContent: "center",

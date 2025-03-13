@@ -286,7 +286,7 @@ const EmployeeList = () => {
         />
 
 
-        <div className="next-page"
+        {/* <div className="next-page"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -295,7 +295,7 @@ const EmployeeList = () => {
           }}
         >
           <PrevNext />
-        </div>
+        </div> */}
 
         <AddMember id="add-member" />
         <Filter id="filter" />
