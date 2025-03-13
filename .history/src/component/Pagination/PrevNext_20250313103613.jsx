@@ -1,0 +1,55 @@
+import { MdNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
+import { FaCalendarAlt } from "react-icons/fa";
+import { PiListBulletsBold } from "react-icons/pi";
+
+function PrevNext() {
+  return (
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "0.7rem",
+        }}
+      >
+        <GrFormPrevious
+          style={{
+            backgroundColor: "#ffe3c3",
+            cursor: "pointer",
+            color: "black",
+            fontSize: "1.5rem",
+          }}
+        />{" "}
+        <MdNavigateNext
+          style={{
+            cursor: "pointer",
+            backgroundColor: "#ffe3c3",
+            color: "black",
+            fontSize: "1.5rem",
+          }}
+        />
+      </div>
+      <PiListBulletsBold
+        style={{
+          cursor: "pointer",
+          backgroundColor: "#ffe3c3",
+          color: "black",
+          fontSize: "1.5rem",
+        }}
+      />
+      <div sty>
+        <span>DECEMBER 25, 2024</span>
+        <FaCalendarAlt
+          style={{
+            cursor: "pointer",
+            color: "orange",
+            fontSize: "1rem",
+          }}
+        />
+      </div>
+    </>
+  );
+}
+
+export default PrevNext;

@@ -1,0 +1,19 @@
+/*************  ✨ Codeium Command 🌟  *************/
+.calendar {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 10;
+.calendar{
+    backgroundColor: "white",
+    border: "1px solid #ccc",
+    padding: "10px",
+    borderRadius: "4px",
+    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+    position: "absolute",
+    zIndex: 10,  
+}
+/******  a4d29cba-ede2-46aa-8812-9636ae57818e  *******/
