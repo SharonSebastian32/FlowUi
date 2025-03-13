@@ -1,5 +1,5 @@
 import { flexRender } from "@tanstack/react-table";
-const EmployeeTableHeader = ({ table }) => {
+ const EmployeeTableHeader = ({ table }) => {
   return (
     <thead className="bg-gray-50">
       {table.getHeaderGroups().map((headerGroup) => (
@@ -21,7 +21,9 @@ const EmployeeTableHeader = ({ table }) => {
               }
             >
               {flexRender(header.column.columnDef.header, header.getContext())}
-              {{}[header.column.getIsSorted()] ?? null}
+              {{
+               
+              }[header.column.getIsSorted()] ?? null}
             </th>
           ))}
         </tr>

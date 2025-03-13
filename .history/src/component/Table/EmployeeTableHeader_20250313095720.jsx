@@ -1,4 +1,5 @@
 import { flexRender } from "@tanstack/react-table";
+ import { FaAngleDown } from "react-icons/fa";
 const EmployeeTableHeader = ({ table }) => {
   return (
     <thead className="bg-gray-50">
@@ -21,7 +22,9 @@ const EmployeeTableHeader = ({ table }) => {
               }
             >
               {flexRender(header.column.columnDef.header, header.getContext())}
-              {{}[header.column.getIsSorted()] ?? null}
+              {{
+               
+              }[header.column.getIsSorted()] ?? null}
             </th>
           ))}
         </tr>

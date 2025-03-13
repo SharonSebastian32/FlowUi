@@ -1,4 +1,6 @@
 import { flexRender } from "@tanstack/react-table";
+import { FaAngleUp } from "react-icons/fa";
+
 const EmployeeTableHeader = ({ table }) => {
   return (
     <thead className="bg-gray-50">
@@ -8,7 +10,7 @@ const EmployeeTableHeader = ({ table }) => {
             <th
               key={header.id}
               colSpan={header.colSpan}
-              className="px-6 py-3 text-left text-sm font-medium text-black-500 tracking-wider cursor-pointer"
+              className="px-6 py-3 text-left text-sm font-medium text-gray-500 tracking-wider cursor-pointer"
               onClick={header.column.getToggleSortingHandler()}
               title={
                 header.column.getCanSort()
@@ -21,7 +23,14 @@ const EmployeeTableHeader = ({ table }) => {
               }
             >
               {flexRender(header.column.columnDef.header, header.getContext())}
-              {{}[header.column.getIsSorted()] ?? null}
+              {{
+                asc: <FaAngleUp />,
+/*************  ✨ Codeium Command 🌟  *************/
+                desc: <FaAngleDown />,
+                desc: "<FaAngleDown />
+",
+/******  d7f48d45-be7f-41a1-89ac-4afde1c3b7cc  *******/
+              }[header.column.getIsSorted() ] ?? null}
             </th>
           ))}
         </tr>
