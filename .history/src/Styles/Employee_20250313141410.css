@@ -41,13 +41,13 @@
 }
 
 #sub-div {
-  padding: 5px 15px;
+  padding: 7px 15px;
   display: flex;
   justify-content: row;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 1rem;
   gap: 2rem;
-  margin-bottom: 0.6rem;
   background-color: #fff7e3f1;
 }
 #div-end {
@@ -137,3 +137,6 @@ button {
 #search:focus {
   outline: none;
 }
+
+
+

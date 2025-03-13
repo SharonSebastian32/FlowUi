@@ -46,8 +46,7 @@
   justify-content: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
-  margin-bottom: 0.6rem;
+   gap: 2rem;
   background-color: #fff7e3f1;
 }
 #div-end {
@@ -137,3 +136,6 @@ button {
 #search:focus {
   outline: none;
 }
+
+
+

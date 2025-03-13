@@ -3,7 +3,7 @@ const AdminInfo = () => {
   return (
     <div className="admin-info">
       <span id="category">Admin</span>
-      <span id="name" className="text-bold text-black">
+      <span id="name" className="text-bold">
         Sharon Sebastian
       </span>
     </div>
