@@ -1,12 +1,13 @@
+import React from "react";
 import { IoIosAddCircleOutline } from "react-icons/io";
-import "./Button.css";
+
 function AddMember() {
   return (
     <div>
-      <button id="add-member" onClick={() => alert("Add Member")}>
-        <div>
+      <button>
+        <div >
           <span>
-            <IoIosAddCircleOutline id="icon-add" />
+            <IoIosAddCircleOutline />
           </span>
           Add Member
         </div>

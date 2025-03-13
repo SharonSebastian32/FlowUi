@@ -2,8 +2,7 @@ import { useMemo, useState, useEffect } from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { GrCircleQuestion } from "react-icons/gr";
 import AddMember from "./Buttons/AddMember";
-import Filter from "./Filter/Filter.jsx";
-import Message from "./Message/Message.jsx";
+import Filter from "./Filter/Filter";
 import {
   useReactTable,
   getCoreRowModel,
@@ -23,8 +22,6 @@ import EmployeeTableBody from "./Table/EmployeeTableBody";
 import PaginationControls from "./Pagination/Pagination";
 import GroupByTeamDropdown from "./GroupByTeam";
 import PrevNext from "./Pagination/PrevNext";
-import { js } from "@eslint/js";
-import Notification from "./Notification/Notification.jsx";
 
 const EmployeeList = () => {
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
@@ -293,8 +290,7 @@ const EmployeeList = () => {
         <PrevNext />
         <AddMember />
         <Filter />
-        <Message />
-       </div>
+      </div>
       <table className="min-w-full">
         <EmployeeTableHeader table={table} />
         <EmployeeTableBody table={table} />

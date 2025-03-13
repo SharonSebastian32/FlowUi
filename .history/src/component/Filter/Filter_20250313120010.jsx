@@ -1,8 +1,8 @@
-import { IoIosAddCircleOutline } from "react-icons/io";
-import "./Button.css";
-function AddMember() {
+
+
+function Filter() {
   return (
-    <div>
+    <>
       <button id="add-member" onClick={() => alert("Add Member")}>
         <div>
           <span>
@@ -11,8 +11,8 @@ function AddMember() {
           Add Member
         </div>
       </button>
-    </div>
+    </>
   );
 }
 
-export default AddMember;
+export default Filter;

@@ -294,7 +294,8 @@ const EmployeeList = () => {
         <AddMember />
         <Filter />
         <Message />
-       </div>
+        <Notification />
+      </div>
       <table className="min-w-full">
         <EmployeeTableHeader table={table} />
         <EmployeeTableBody table={table} />

@@ -3,10 +3,10 @@ import "./Button.css";
 function AddMember() {
   return (
     <div>
-      <button id="add-member" onClick={() => alert("Add Member")}>
+      <button id="add-member" onClick={() => console.log("Add Member")}>
         <div>
           <span>
-            <IoIosAddCircleOutline id="icon-add" />
+            <IoIosAddCircleOutline />
           </span>
           Add Member
         </div>

@@ -1,0 +1,9 @@
+#add-member {
+  background: linear-gradient(to right, yellow, orange);
+}
+
+#add-member div {
+  display: flex;
+  align-items: center;
+  gap:
+}

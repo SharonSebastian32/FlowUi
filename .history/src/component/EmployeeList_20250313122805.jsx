@@ -24,7 +24,6 @@ import PaginationControls from "./Pagination/Pagination";
 import GroupByTeamDropdown from "./GroupByTeam";
 import PrevNext from "./Pagination/PrevNext";
 import { js } from "@eslint/js";
-import Notification from "./Notification/Notification.jsx";
 
 const EmployeeList = () => {
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
@@ -294,7 +293,7 @@ const EmployeeList = () => {
         <AddMember />
         <Filter />
         <Message />
-       </div>
+      </div>
       <table className="min-w-full">
         <EmployeeTableHeader table={table} />
         <EmployeeTableBody table={table} />

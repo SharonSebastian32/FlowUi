@@ -6,7 +6,7 @@ function AddMember() {
       <button id="add-member" onClick={() => alert("Add Member")}>
         <div>
           <span>
-            <IoIosAddCircleOutline id="icon-add" />
+            <IoIosAddCircleOutline id="icons"  />
           </span>
           Add Member
         </div>
