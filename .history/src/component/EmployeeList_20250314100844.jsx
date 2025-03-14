@@ -21,7 +21,7 @@ import ActionMenu from "../Utils/ActionMenu.jsx";
 import EmployeeTableHeader from "./Table/EmployeeTableHeader";
 import EmployeeTableBody from "./Table/EmployeeTableBody";
 import PaginationControls from "./Pagination/Pagination";
-import GroupByTeamDropdown from "../component/Grouping/GroupByTeam.jsx";
+import GroupByTeamDropdown from "./GroupByTeam";
 import AdminInfo from "./Admin/AdminInfo.jsx";
 import PrevNext from "./Pagination/PrevNext.jsx";
 

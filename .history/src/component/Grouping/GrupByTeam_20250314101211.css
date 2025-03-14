@@ -1,0 +1,12 @@
+.dropdown-toggle{
+    display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexDirection: "row",
+          padding: "8px 12px",
+          border: "1px solid #e0e0e0",
+          borderRadius: "4px",
+          cursor: "pointer",
+          minWidth: "150px",
+          transition: "all 0.2s ease",
+}

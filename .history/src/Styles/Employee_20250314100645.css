@@ -214,8 +214,17 @@ button {
   }
 }
 
-#team-header {
+
+
+.team-header{
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "row",
+.team-header {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+
+
+ 

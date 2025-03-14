@@ -16,12 +16,12 @@ import {
 import mockData from "../../Data/MOCK_DATA.json";
 import "../Styles/Employee.css";
 import IndeterminateCheckbox from "../component/Tanstack/IndeterminateCheckbox.jsx";
-import ColumnVisibilityModal from "../Utils/ColumnVisibilityModal.jsx";
-import ActionMenu from "../Utils/ActionMenu.jsx";
+import ColumnVisibilityModal from "./ColumnVisibilityModal";
+import ActionMenu from "./ActionMenu";
 import EmployeeTableHeader from "./Table/EmployeeTableHeader";
 import EmployeeTableBody from "./Table/EmployeeTableBody";
 import PaginationControls from "./Pagination/Pagination";
-import GroupByTeamDropdown from "../component/Grouping/GroupByTeam.jsx";
+import GroupByTeamDropdown from "./GroupByTeam";
 import AdminInfo from "./Admin/AdminInfo.jsx";
 import PrevNext from "./Pagination/PrevNext.jsx";
 
@@ -92,7 +92,6 @@ const EmployeeList = () => {
       accessorFn: (row) => `${row.Team}`,
       header: () => (
         <div
-          id="team-header"
           style={{
             display: "flex",
             alignItems: "center",

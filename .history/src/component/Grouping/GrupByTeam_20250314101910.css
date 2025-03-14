@@ -1,0 +1,35 @@
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 150px;
+  transition: all 0.2s ease;
+}
+
+#group-by-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#group-selection {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+#close-circle-outline
