@@ -265,9 +265,3 @@ button {
   margin-left: 2.4px;
   cursor: pointer;
 }
-
-#outline-vertical {
-  color: gray;
-  height: 20px;
-  width: 30px;
-}

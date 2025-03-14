@@ -83,7 +83,8 @@ const EmployeeList = () => {
         <div id="team-header">
           <span>Team</span>
           <span id="question-span">
-            <GrCircleQuestion id="circle-icon" />
+            <GrCircleQuestion id="circle-icon"       
+            />
           </span>
         </div>
       ),
@@ -136,10 +137,25 @@ const EmployeeList = () => {
       accessorKey: "Action",
       id: "Action",
       header: () => (
-        <div id="action-container">
+        <div id=""
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
           <span>Action</span>
-          <span id="action-span" onClick={() => handleMenuItemClick("edit")}>
-            <HiOutlineDotsVertical id="outline-vertical" />
+          <span
+            style={{ marginLeft: "2.4px", cursor: "pointer" }}
+            onClick={() => handleMenuItemClick("edit")}
+          >
+            <HiOutlineDotsVertical
+              style={{
+                color: "gray",
+                height: "20px",
+                width: "30px",
+              }}
+            />
           </span>
         </div>
       ),

@@ -73,17 +73,41 @@ const EmployeeList = () => {
       accessorFn: (row) => `${row.Name}`,
       id: "Name",
       header: "Name",
-      cell: ({ row }) => <span id="name-span">{row.original.Name}</span>,
+      cell: ({ row }) => (
+        <span
+          id="name-span"
+          style={{
+            color: "#000000",
+            fontWeight: "500",
+            fontSize: "14px",
+          }}
+        >
+          {row.original.Name}
+        </span>
+      ),
     },
     {
       accessorKey: "Team",
       id: "Team",
       accessorFn: (row) => `${row.Team}`,
       header: () => (
-        <div id="team-header">
+        <div
+          id="team-header"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
           <span>Team</span>
-          <span id="question-span">
-            <GrCircleQuestion id="circle-icon" />
+          <span style={{ marginLeft: "2.6px", cursor: "pointer" }}>
+            <GrCircleQuestion
+              style={{
+                color: "black",
+                height: "20px",
+                width: "20px",
+              }}
+            />
           </span>
         </div>
       ),
@@ -136,10 +160,25 @@ const EmployeeList = () => {
       accessorKey: "Action",
       id: "Action",
       header: () => (
-        <div id="action-container">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
           <span>Action</span>
-          <span id="action-span" onClick={() => handleMenuItemClick("edit")}>
-            <HiOutlineDotsVertical id="outline-vertical" />
+          <span
+            style={{ marginLeft: "2.4px", cursor: "pointer" }}
+            onClick={() => handleMenuItemClick("edit")}
+          >
+            <HiOutlineDotsVertical
+              style={{
+                color: "gray",
+                height: "20px",
+                width: "30px",
+              }}
+            />
           </span>
         </div>
       ),
@@ -250,6 +289,7 @@ const EmployeeList = () => {
         <div className="next-page">
           <PrevNext />
         </div>
+
         <AddMember id="add-member" />
         <Filter id="filter" />
         <Message id="message" />

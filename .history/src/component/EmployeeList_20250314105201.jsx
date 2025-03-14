@@ -139,7 +139,13 @@ const EmployeeList = () => {
         <div id="action-container">
           <span>Action</span>
           <span id="action-span" onClick={() => handleMenuItemClick("edit")}>
-            <HiOutlineDotsVertical id="outline-vertical" />
+            <HiOutlineDotsVertical
+              style={{
+                color: "gray",
+                height: "20px",
+                width: "30px",
+              }}
+            />
           </span>
         </div>
       ),

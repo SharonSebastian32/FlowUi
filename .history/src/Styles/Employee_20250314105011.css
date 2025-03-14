@@ -255,19 +255,3 @@ button {
   width: 20px;
 }
 
-#action-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-#action-span {
-  margin-left: 2.4px;
-  cursor: pointer;
-}
-
-#outline-vertical {
-  color: gray;
-  height: 20px;
-  width: 30px;
-}

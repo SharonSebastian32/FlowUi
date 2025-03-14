@@ -244,30 +244,6 @@ button {
   flex-direction: row;
 }
 
-.question-span {
-  margin-left: 2.6px;
-  cursor: pointer;
-}
-
-#circle-icon {
-  color: black;
-  height: 20px;
-  width: 20px;
-}
-
-#action-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-#action-span {
-  margin-left: 2.4px;
-  cursor: pointer;
-}
-
-#outline-vertical {
-  color: gray;
-  height: 20px;
-  width: 30px;
+.question-span{
+  marginLeft: "2.6px", cursor: "pointer" }}
 }

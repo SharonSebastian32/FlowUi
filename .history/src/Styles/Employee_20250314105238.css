@@ -266,8 +266,11 @@ button {
   cursor: pointer;
 }
 
-#outline-vertical {
-  color: gray;
-  height: 20px;
-  width: 30px;
+
+#outline-vertical{
+  style={{
+    color: "gray",
+    height: "20px",
+    width: "30px",
+  }}
 }
